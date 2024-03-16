@@ -13,52 +13,58 @@ This is a RESTful API built with Node.js, Express.js, and MongoDB for managing a
 
 ```bash
 git clone https://github.com/your-repo/qsoAPI.git
+```
+
 Navigate to the project directory:
-bash
 
-
-Copy code
+```bash
 cd qsoAPI
-Install dependencies:
-bash
+```
 
+2. Install dependencies:
 
-Copy code
+```bash
 npm install
-Create a .env file in the root directory and add the following environment variables:
+```
 
-Copy code
+3. Create a .env file in the root directory and add the following environment variables:
+
+```bash
+touch .env
+```
+
 MONGODB_URI=<your-mongodb-uri>
 JWT_SECRET=<your-jwt-secret>
 Replace <your-mongodb-uri> with the connection string for your MongoDB instance, and <your-jwt-secret> with a secret key for JWT authentication.
 
-Usage
-Development
+### Usage
+
+#### Development
+
 To start the development server with hot-reloading, run:
 
-bash
-
-
-Copy code
+```bash
 npm run dev
-The API will be accessible at http://localhost:3000.
+```
 
-Production
+The API will be accessible at http://localhost:8080.
+
+#### Production
+
 To start the production server, run:
 
-bash
-
-
-Copy code
+```bash
 npm start
-Swagger Documentation
+```
+
+#### Swagger Documentation
+
 The API is documented using Swagger. To generate the Swagger documentation, run:
 
-bash
-
-
-Copy code
+```bash
 npm run swagger
+```
+
 The Swagger documentation will be available at http://localhost:3000/api-docs.
 
 API Endpoints
@@ -71,20 +77,8 @@ PUT /api/qsos/:id: Update a QSO log by ID
 DELETE /api/qsos/:id: Delete a QSO log by ID
 Refer to the Swagger documentation for detailed information about request and response formats.
 
-Authentication
+#### Authentication
+
 The API uses JSON Web Tokens (JWT) for authentication. To access protected routes, include a valid JWT in the Authorization header of your requests:
 
-
-Copy code
 Authorization: Bearer <your-jwt-token>
-Contributing
-Contributions are welcome! Please follow the standard Git workflow:
-
-Fork the repository
-Create a new branch for your feature or bug fix
-Commit your changes
-Push to the branch
-Create a pull request
-License
-This project is licensed under the ISC License.
-```
