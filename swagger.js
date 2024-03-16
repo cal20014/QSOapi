@@ -2,8 +2,8 @@ const swaggerAutogen = require("swagger-autogen")();
 
 const doc = {
   info: {
-    title: "CSE341 Docs",
-    description: "API documentation for CSE341",
+    title: "QSO API Docs",
+    description: "API documentation for QSO API",
   },
   host: "qsoapi.onrender.com",
   schemes: ["https"], // Using "http" for local development
